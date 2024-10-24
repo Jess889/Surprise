@@ -1,0 +1,49 @@
+/* src/QuienesSomos.css */
+.quienes-somos-container {
+    max-width: 1000px; /* Aumenta el ancho máximo si es necesario */
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .boxes-container {
+    display: flex; /* Usa Flexbox para alinear elementos en fila */
+    justify-content: space-around; /* Espaciado entre los elementos */
+    flex-wrap: wrap; /* Permitir que los elementos se ajusten en filas si no hay espacio suficiente */
+  }
+  
+  .box {
+    border: 1px solid #ccc; /* Borde del recuadro */
+    border-radius: 8px; /* Esquinas redondeadas */
+    padding: 20px; /* Espaciado interno */
+    margin: 10px; /* Espaciado entre recuadros */
+    background-color: #f9f9f9; /* Fondo ligeramente gris */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para el efecto de profundidad */
+    flex: 1; /* Permitir que cada caja crezca y ocupe espacio disponible */
+    min-width: 250px; /* Ancho mínimo para mantener un diseño agradable */
+  }
+  
+  h1 {
+    color: #333; /* Color del título principal */
+  }
+  
+  h2 {
+    color: #0056b3; /* Color de los subtítulos */
+  }
+  
+  p, ul {
+    text-align: left; /* Alinear texto a la izquierda */
+  }
+
+  /* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+  .boxes-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box {
+    width: 100%; /* Hacer que las cajas ocupen todo el ancho */
+    margin-bottom: 20px;
+  }
+}

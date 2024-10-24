@@ -1,15 +1,15 @@
 import React from 'react';
-import './Home.css'; // Asegúrate de tener estilos para este componente
+import './Home.css'; // Reutilizamos los estilos de Home
 
-function Home() {
+function HomeLoggedIn({ onLogout }) {
   return (
     <div className="home-container">
       <section className="hero-section">
-        <h1>¡Bienvenido a Surprise!</h1>
-        <p>Descubre regalos únicos y personalizados para cada ocasión.</p>
+        <h1>¡Bienvenido de nuevo a Surprise!</h1>
+        <p>Gracias por iniciar sesión. Explora más productos únicos y personalizados.</p>
         <button className="explore-button">Explora nuestros productos</button>
       </section>
-      
+
       <section className="features-section">
         <h2>¿Por qué elegir Surprise?</h2>
         <div className="features">
@@ -28,7 +28,7 @@ function Home() {
         </div>
       </section>
 
-      {/* Nueva sección de productos */}
+      {/* Sección de productos */}
       <section className="products-section">
         <h2>Productos Destacados</h2>
         <div className="products">
@@ -50,4 +50,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default HomeLoggedIn;

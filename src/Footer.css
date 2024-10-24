@@ -1,0 +1,56 @@
+.info-bar {
+    background-color: #0056b3; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    padding: 20px; /* Espaciado interno */
+    text-align: center; /* Alinear el texto al centro */
+    width: 100%; /* Ocupar todo el ancho */
+    margin: 0; /* Sin márgenes */
+    position: relative; /* Relativo para evitar que se superponga con otros elementos */
+  }
+  
+  .info-content {
+    max-width: 1200px; /* Ancho máximo para centrado */
+    margin: 0 auto; /* Centrar contenido */
+    display: flex; /* Usar flexbox para alinear elementos */
+    justify-content: space-between; /* Distribuir el espacio entre las secciones */
+    align-items: center; /* Alinear elementos verticalmente */
+    padding: 10px; /* Espaciado interno */
+    flex-wrap: wrap;
+  }
+  
+  .info-section {
+    flex: 1; /* Cada sección toma el mismo espacio */
+    min-width: 200px; /* Asegúrate de que las secciones no sean demasiado estrechas */
+    margin: 0 20px; /* Espaciado lateral */
+    text-align: left; /* Alinear texto a la izquierda */
+  }
+  
+  .social-links {
+    text-align: center; /* Alinear texto al centro para redes sociales */
+  }
+  
+  .social-links a {
+    margin: 0 10px; /* Espaciado entre enlaces */
+    color: #fff; /* Color de los enlaces */
+    text-decoration: none; /* Sin subrayado */
+  }
+  
+  .social-links a:hover {
+    text-decoration: underline; /* Subrayar al pasar el mouse */
+  }
+  
+  @media (max-width: 768px) {
+    .info-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .info-section {
+      margin-bottom: 20px;
+    }
+  
+    .social-links {
+      margin-top: 10px;
+    }
+  }
+  

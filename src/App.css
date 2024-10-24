@@ -178,3 +178,60 @@ button.submit:hover {
 .modal-content button:hover {
   background-color: #31b0d5;
 }
+/* src/App.css */
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Altura mínima para ocupar toda la pantalla */
+}
+
+main {
+  flex: 1; /* Hace que el main tome el espacio restante */
+}
+
+/* Ajustes para la barra de navegación y los enlaces */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .auth-buttons {
+    flex-direction: column;
+  }
+
+  button.login, button.register {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-container img {
+    width: 100px; /* Ajustar tamaño del logo en móviles */
+  }
+
+  .site-title {
+    font-size: 20px;
+  }
+
+  nav {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .nav-links {
+    margin-bottom: 10px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
